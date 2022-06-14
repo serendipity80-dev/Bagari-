@@ -1117,7 +1117,7 @@ main{
       margin-left: -20px;
     }
   }
-  @media screen and (min-width:600px),(max-width: 950px){
+  @media screen and (max-width: 950px){
     .contact-section{
       flex-direction: column;
       transform: translate(0%,10%);
