@@ -588,6 +588,8 @@ main{
     -moz-box-pack: justify;
     justify-content: space-between;
     clear: both;
+    margin-top: 3rem;
+  
   }
   
   .timeline-block-right {
