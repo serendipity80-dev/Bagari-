@@ -45,6 +45,9 @@
 body{
     background: var(--section-bg-color);
 }
+h1,h2,h3,h4{
+  letter-spacing: .1em;
+}
 a{
   text-decoration: none;
 }
@@ -106,8 +109,8 @@ header .nav-bar{
   text-shadow: var(--text-shadow);
 }
 .logo{
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 60px;
   /* box-shadow: var(--text-shadow); */
 }
 .logo img{
@@ -125,8 +128,9 @@ header .nav-bar{
 .navigation .nav-items a i{
   display: none;
 }
-.navigation .nav-items a:hover{
-    color: rgb(59, 75, 180);
+.navigation .nav-items a:hover{    
+  opacity: .8;
+  text-shadow: 0px 5px 15px -1px  rgba(250, 248, 248, 0.4); 
 }
 
 .navigation .nav-items a:not(:last-child){
@@ -462,7 +466,9 @@ header .nav-bar{
     font-size: 0.9em;
     padding: 5px 15px;
   }
-  
+  .sub-title{
+    font-weight: 900;
+  }
 
   /*======= About section =======*/
   
@@ -487,7 +493,7 @@ main{
     width: 7rem;
     height: 0.25rem;
     margin: 0 auto;
-    /* margin-top: -1rem; */
+    
   }
   
   .review {
@@ -547,16 +553,14 @@ main{
   /* **********end of about me**************** */
 }
       
-/* LEBENSLAUF SEITE */
+/************ lebenslauf **********/
 
 .container {
     width: 100%;
     padding: 5rem 0;
-    /* margin: 50px auto; */
     position: relative;
     overflow: hidden;
-    /* background-color: var(--section-bg-color);
-    color: var(--white-color); */
+  
   }
   
   .container:before {
@@ -651,8 +655,8 @@ main{
        direction: ltr;
     }
   }
-  
-  /* GALLERY SECTION */
+  /************ end of lebenslauf **************/
+ 
   /*************** gallery ***************/
 .gallery {
     padding-top: 2rem;
@@ -700,8 +704,6 @@ main{
   }
   .bus-img:hover  {
     box-shadow: 0px 5px 15px -1px  rgba(250, 248, 248, 0.4);
-    /* transform: scale(1.1); */
-
   }
   
   
@@ -804,82 +806,10 @@ main{
   .modal-img.selected {
     opacity: 1;
   }
-  
-  
-  /* .gallery-img-container {
-    position: relative;
-    background: rgb(52,73,94);
-    display: flex;
-    width: 33.3%;
-    height: 50vh;
-  }
-  .gallery-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 2rem;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    transition: all 0.3s linear;
-    opacity: 0;
-    cursor: pointer;
-  }
-  .gallery-img {
-    transition: all 0.3s linear;
-    width: 100%;
-    height: 100%;
-  }
-  .gallery-img-container:hover .gallery-img {
-    opacity: 0.5;
-  }
-  .gallery-img-container:hover .gallery-icon {
-    opacity: 1;
-  }
-  @media screen and (min-width: 768px) {
-    .gallery-center {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .gallery-img-container {
-      flex: 0 0 30%;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .gallery-img-container {
-      flex: 0 1 33.3%;
-    }
-  } */
-  
-  
-  /* modal */
-  /* img[data-modal] {
-    cursor: zoom-in;
-  }
-  
-  .modal-content {
-    z-index: -100; /* behind everything 
-    opacity: 0; /* invisible 
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8); /* black, transparent 
-    width: 100vw; /* 100% width 
-    height: 100vh; /* 100% height 
-    display: flex;
-    justify-content: center; /* horizontal align 
-    align-items: center; /* vertical align 
-    transition: 0.5s; /* animate 
-    cursor: zoom-out;
-  }
-  
-  .modal-content img {
-    min-width: 50vw; /* at least 50% of the viewport width 
-    height: auto;
-  } */
   /*************** end of gallery ***************/
 
 
-  /* adr-schein seite */
+  /* adr-schein page */
 
 
 .slider{
@@ -890,7 +820,6 @@ main{
     margin-top: 7rem;
     text-align: center;
     padding: 1rem 0;
-    /* set relative for buttons */
     position: relative;
     border-radius: 0.25rem; box-shadow: 0 4px 6px -1px rgba(225,225,225,0.1), 0 2px 4px -1px rgba(225,225,225,0.6);
 }
@@ -985,7 +914,7 @@ main{
     }
   }
   
-  /* MORE CSS FOR JS */
+
   
   .slide-container {
     display: flex;
@@ -1013,8 +942,10 @@ main{
   .slide.last {
     transform: translateX(-100%);
   }
+   /********* end adr-schein page *********/
 
-  /* KONTAKT PAGE */
+
+  /*********contact *************/
  
   .contact-section{
     width: 100%;
@@ -1057,60 +988,7 @@ main{
     margin-bottom: 30px;
   }
   
-  .contact-form .text-box{
-    background: #888;
-    color: #fff;
-    border: none;
-    width: calc(50% - 10px);
-    height: 50px;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
-  }
-  
-  .contact-form .text-box:first-child{
-    margin-right: 15px;
-  }
-  
-  .contact-form textarea{
-    background: #888;
-    color: #fff;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-    min-height: 200px;
-    max-height: 400px;
-    resize: vertical;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
-  }
-  
-  .contact-form .send-btn{
-    float: right;
-    background: #888;
-    color: #fff;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: background;
-  }
-  
-  .contact-form .send-btn:hover{
-    opacity: .8;
-  }
+ 
   @media screen and (max-width: 385px){
     .contact-info, .contact-info i {
       font-size: 15px;
@@ -1136,9 +1014,7 @@ main{
       height: 600px;
     }
   
-    .contact-form .text-box{
-      width: 100%;
-    }
+    
   }
   @media screen and (max-width: 450px){
     .contact-form .map{
@@ -1152,30 +1028,4 @@ main{
       height: 600px;
     }
   }
-  /*css for alert messages*/
-  
-  .alert-success{
-    z-index: 1;
-    background: #D4EDDA;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #3AD66E;
-    border-radius: 4px;
-  }
-  
-  .alert-error{
-    z-index: 1;
-    background: #FFF3CD;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #FFA502;
-    border-radius: 4px;
-  }
+  /****** end contact *************/
